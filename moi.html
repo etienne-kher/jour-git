@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="">
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<table>
+			assurer que git soit bien installé
+
+git --version
+
+ 
+
+configurer ses nom et prénom
+
+git config --global user.name "<prénom> <nom>"
+
+ 
+
+configurer son adresse mail
+
+git config --global user.email "<adresse@mail.tld>"
+
+ 
+
+activer la coloration syntaxique (optionnel)
+
+git config --global color.ui auto
+
+ 
+
+configurer un nouveau / existant projet (à faire dans le bon dossier)
+
+git init
+
+ 
+
+voir les nouveaux fichiers créés, la branche actuelle, etc.
+
+git status
+
+ 
+
+ajouter un fichier dans le repository
+
+git add index.html
+git commit -m 'premier commit de la page l\'accueil'
+
+ 
+
+avoir un résumé des changements effectués sur les fichiers locaux
+
+git diff
+
+ 
+
+avoir une comparaison des fichiers ligne par ligne
+
+git diff --color-words
+
+ 
+
+voir le fichier de log
+
+git log
+
+ 
+
+voir le fichier de log plus succint
+
+git log --oneline
+
+ 
+
+restaurer un fichier modifié par sa version précédente
+
+git checkout <nom-fichier>
+
+ 
+
+restauration dépôt, index et répertoire de travail
+
+git reset --hard <reference-commit>
+
+ 
+
+restauration dépôt et index
+
+git reset --mixed <reference-commit>
+
+ 
+
+restauration dépôt
+
+git reset --soft <reference-commit>
+
+ 
+
+créer une branche
+
+git branch <nom-nouvelle-branche>
+
+ 
+
+vérifier la branche dans laquelle vous vous situez
+
+git branch
+
+ 
+
+changer de branche
+
+git checkout <nom-branche>
+
+ 
+
+retourner dans la branche principale
+
+git checkout master
+
+ 
+
+fusionner une autre branche avec la principale
+
+git merge <nom-branche>
+
+ 
+
+connecter le repository local à celui de GitHub
+
+git remote add origin <github-repository-url>
+
+ 
+
+publier les changements sur GitHub
+
+git push origin <nom-branche>
+
+ 
+
+récupérer la dernière version du repository de GitHub
+
+git clone <github-repository-url>
+
+ 
+
+récupérer les changements effectués (utile quand plusieurs personnes développent en même temps)
+
+git pull origin <nom-branche>
+		</table>
+	</body>
+</html>
